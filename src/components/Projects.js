@@ -1,11 +1,29 @@
 const projects = [
   {
+    title: 'NeuroCity 🏙️ — Living Intelligence Grid',
+    desc: 'A fully sentient-feeling smart city platform powered by Gen AI. Features a 3D holographic city map, conversational city AI (speaks in first person), live IoT sensor streams, predictive intelligence engine, emergency command center, and citizen identity nodes.',
+    tech: ['Next.js 14', 'TypeScript', 'Spring Boot', 'Three.js', 'Framer Motion', 'OpenAI', 'WebSockets', 'Tailwind'],
+    color: '#00F5FF',
+    icon: '🏙️',
+    github: 'https://github.com/PAVANRYADUVANSHI/NeuroCity',
+    live: 'http://localhost:3000',
+    featured: true,
+    stats: [
+      { icon: '🧠', value: 'CityMind', label: 'AI Brain' },
+      { icon: '🗺️', value: '3D Map', label: 'NeuroMap' },
+      { icon: '📡', value: '14,392', label: 'IoT Sensors' },
+      { icon: '🔮', value: 'Predict', label: 'Engine' },
+      { icon: '🚨', value: 'NeuroPulse', label: 'Emergency' },
+      { icon: '⚡', value: 'Next.js', label: 'TypeScript' },
+    ]
+  },
+  {
     title: 'NeuralForge 🧠 — AI Dev Platform',
     desc: 'World\'s first Autonomous AI Development Intelligence Platform built in Java. Generates full-stack features from plain English, predicts bugs before runtime, self-heals production errors, and features a 3D neural dashboard.',
     tech: ['Java 21', 'Spring Boot 3', 'React', 'LangChain4j', 'GPT-4o', 'Docker', 'Kafka', 'Redis'],
     color: '#6366f1',
     icon: '🧠',
-    github: 'https://github.com/SRINIDHI-2524/NeuralForge',
+    github: 'https://github.com/PAVANRYADUVANSHI/NeuralForge',
     live: 'http://localhost:3030',
     featured: true,
     stats: [
@@ -23,7 +41,7 @@ const projects = [
     tech: ['React', 'Spring Boot', 'MySQL', 'Stripe', 'Gen AI', 'Tailwind'],
     color: '#fc8019',
     icon: '🍔',
-    github: 'https://github.com/SRINIDHI-2524/FAST-Food-Delivery-App',
+    github: 'https://github.com/PAVANRYADUVANSHI/FAST-Food-Delivery-App',
     live: 'https://fast-food-delivery-srinidhi.netlify.app',
   },
   {
@@ -32,7 +50,7 @@ const projects = [
     tech: ['React', 'Axios', 'Framer Motion', 'json-server', 'CSS'],
     color: '#DAA520',
     icon: '🎂',
-    github: 'https://github.com/SRINIDHI-2524/bake-my-cake-phase-1',
+    github: 'https://github.com/PAVANRYADUVANSHI/bake-my-cake-phase-1',
     live: 'https://bake-my-cake-srinidhi.netlify.app',
   },
   {
@@ -41,7 +59,7 @@ const projects = [
     tech: ['HTML', 'CSS', 'JavaScript'],
     color: '#e23744',
     icon: '🍕',
-    github: 'https://github.com/SRINIDHI-2524',
+    github: 'https://github.com/PAVANRYADUVANSHI/zomato-ui-clone',
     live: '#',
   },
   {
@@ -50,7 +68,7 @@ const projects = [
     tech: ['React', 'Node.js', 'SQL'],
     color: '#2563eb',
     icon: '✅',
-    github: 'https://github.com/SRINIDHI-2524',
+    github: 'https://github.com/PAVANRYADUVANSHI/task-manager-app',
     live: '#',
   },
   {
@@ -59,7 +77,7 @@ const projects = [
     tech: ['React', 'CSS', 'JavaScript'],
     color: '#9333ea',
     icon: '🚀',
-    github: 'https://github.com/SRINIDHI-2524',
+    github: 'https://github.com/PAVANRYADUVANSHI/portfolio-website',
     live: '#',
   },
   {
@@ -68,7 +86,7 @@ const projects = [
     tech: ['Next.js', 'Node.js', 'MongoDB', 'Stripe'],
     color: '#10b981',
     icon: '🛒',
-    github: 'https://github.com/SRINIDHI-2524',
+    github: 'https://github.com/PAVANRYADUVANSHI/shopnow-ecommerce',
     live: '#',
   },
   {
@@ -77,21 +95,49 @@ const projects = [
     tech: ['React', 'API', 'CSS'],
     color: '#f59e0b',
     icon: '🌤️',
-    github: 'https://github.com/SRINIDHI-2524',
+    github: 'https://github.com/PAVANRYADUVANSHI/weather-dashboard',
     live: '#',
   },
 ];
 
 export default function Projects() {
-  const neuralforge = projects[0];
-  const featured = projects[1];
-  const rest = projects.slice(2);
+  const neurocity = projects[0];
+  const neuralforge = projects[1];
+  const featured = projects[2];
+  const rest = projects.slice(3);
 
   return (
     <section className="projects section" id="projects">
       <div className="section-title">
         <h2>My <span>Projects</span></h2>
         <div className="title-line" />
+      </div>
+
+      {/* NeuroCity — TOP FLAGSHIP */}
+      <div className="featured-card" style={{ '--color': neurocity.color, marginBottom: '2rem' }}>
+        <div className="featured-badge" style={{ background: 'linear-gradient(135deg,#00F5FF,#39FF14)' }}>🏙️ NEW — Smart City Gen AI</div>
+        <div className="featured-inner">
+          <div className="featured-left">
+            <span className="featured-icon">{neurocity.icon}</span>
+            <h2>{neurocity.title}</h2>
+            <p>{neurocity.desc}</p>
+            <div className="project-tech">
+              {neurocity.tech.map(t => <span key={t}>{t}</span>)}
+            </div>
+            <div className="featured-btns">
+              <a href={neurocity.github} target="_blank" rel="noreferrer" className="featured-github-btn">GitHub ↗</a>
+              <a href={neurocity.live} target="_blank" rel="noreferrer" className="featured-live-btn">Live Demo ↗</a>
+            </div>
+          </div>
+          <div className="featured-right">
+            <div className="featured-stats">
+              {neurocity.stats.map(s => (
+                <div className="fstat" key={s.label}><span>{s.icon}</span><strong>{s.value}</strong><small>{s.label}</small></div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <div className="featured-glow" />
       </div>
 
       {/* NeuralForge — NEW FLAGSHIP */}
