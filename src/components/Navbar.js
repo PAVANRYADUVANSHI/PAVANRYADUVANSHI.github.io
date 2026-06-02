@@ -36,7 +36,9 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
           >{l}</a>
         ))}
-        <a href={process.env.PUBLIC_URL + '/PAVANR-RESUME.pdf'} download className="nav-resume-btn">
+        <a href="https://github.com/PAVANRYADUVANSHI" target="_blank" rel="noreferrer" className="nav-github-btn">GitHub</a>
+        <a href="http://localhost:5173" target="_blank" rel="noreferrer" className="nav-v2-btn">Portfolio v2 🚀</a>
+        <a href={process.env.PUBLIC_URL + '/PAVANRYADUVANSHI RESUME 2-6-26.pdf'} download className="nav-resume-btn">
           <span>Resume</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         </a>

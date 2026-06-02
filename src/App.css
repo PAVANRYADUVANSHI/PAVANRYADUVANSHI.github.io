@@ -817,6 +817,33 @@ a { text-decoration: none; color: inherit; }
   font-weight: 700;
 }
 .footer-sub { margin-top: 6px; font-size: 0.8rem; opacity: 0.6; }
+.footer-links { margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 12px; }
+.footer-link { font-size: 0.85rem; color: var(--neon); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.footer-link:hover { border-color: var(--neon); }
+.footer-divider { color: var(--border); }
+.nav-github-btn {
+  font-size: 0.9rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 6px 16px !important;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.nav-github-btn:hover { border-color: var(--neon) !important; color: var(--neon) !important; }
+.nav-github-btn::after { display: none !important; }
+.nav-v2-btn {
+  font-size: 0.85rem;
+  padding: 6px 16px !important;
+  background: linear-gradient(135deg, #6c63ff, #00d4ff) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  border: 1px solid rgba(108,99,255,0.4) !important;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.nav-v2-btn:hover { border-color: #6c63ff !important; box-shadow: 0 0 12px rgba(108,99,255,0.3); }
+.nav-v2-btn::after { display: none !important; }
 
 /* ===== ANIMATIONS ===== */
 @keyframes fadeUp {
