@@ -42,7 +42,7 @@ export default function Hero() {
           <a href="#contact" className="btn-outline">Contact Me</a>
         </div>
         <div className="hero-socials">
-          <a href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/PAVANRYADUVANSHI" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="mailto:pavanryavdavkumsi25@gmail.com">Email</a>
         </div>

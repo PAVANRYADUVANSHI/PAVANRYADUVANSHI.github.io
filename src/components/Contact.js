@@ -38,7 +38,7 @@ export default function Contact() {
             </div>
             <div className="contact-item">
               <span>🐙</span>
-              <a href="https://github.com" target="_blank" rel="noreferrer">GitHub Profile</a>
+              <a href="https://github.com/PAVANRYADUVANSHI" target="_blank" rel="noreferrer">GitHub Profile</a>
             </div>
           </div>
         </div>
